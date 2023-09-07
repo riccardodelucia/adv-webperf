@@ -6,7 +6,10 @@ async function load() {
             <article>
                 <h2>${exhibition.title}</h2>
                 <p>${exhibition.description}</p>
-                <img src="gallery/${exhibition.image}">
+                <picture>
+                  <source srcset="gallery/${exhibition.image}.webp" type="image/webp" />
+                  <img src="gallery/${exhibition.image}.png" />
+                </picture>
             </article>
         `;
     document.querySelector("main").innerHTML += article;
