@@ -4,12 +4,12 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="background.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet" />
-    <link href="gallery/ancient-greece.png" rel="preload" as="image" />
     <link
       href="
     https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyeAZ9hiJ-Ek-_EeA.woff2"
       rel="preload"
       as="font"
+      crossorigin
     />
     <script defer src="script.js"></script>
     <meta charset="UTF-8" />
@@ -19,6 +19,18 @@
   </head>
   <body>
     <h1><img src="images/logo.png" alt="Frontend Masters Museum" width="300" /></h1>
-    <main></main>
+    <main>
+      <article>
+        <h2>Life in Ancient Greece</h2>
+        <p>
+          Uncover the world of ancient Greece through the sculptures, tools, and jewelry found in ruins from over 2000 years ago that have
+          been unearthed through modern science and technology.
+        </p>
+        <picture>
+          <source srcset="gallery/ancient-greece.webp" type="image/webp" />
+          <img src="gallery/ancient-greece.png" fetchpriority="high" />
+        </picture>
+      </article>
+    </main>
   </body>
 </html>
