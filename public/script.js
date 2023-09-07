@@ -8,7 +8,7 @@ async function load() {
                 <p>${exhibition.description}</p>
                 <picture>
                   <source srcset="gallery/${exhibition.image}.webp" type="image/webp" />
-                  <img src="gallery/${exhibition.image}.png" />
+                  <img src="gallery/${exhibition.image}.png" loading="lazy"/>
                 </picture>
             </article>
         `;
